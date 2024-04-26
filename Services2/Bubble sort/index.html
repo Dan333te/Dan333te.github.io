@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+    <link
+      rel="shortcut icon"
+      href="/dist/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="/output.css" />
+
+    <title>Algorthim</title>
+  </head>
+  <body>
+    <nav>
+      <!-- <a  class="uppercase text-blue-600  text-2xl">Algorthims</a> -->
+      <div>
+        <img
+          src="../images/machine-learning (1).png"
+          height="64px"
+          width="64px"
+          alt=""
+        />
+      </div>
+
+      <ul id="navMenu">
+        <li><a id="Home" href="/index.html">Home</a></li>
+        <li id="dropdown">
+          <a id="servNav"
+            >Services
+            <div id="dropdown-content">
+              <a href="#" id="sorting">Sorting Algorithm </a>
+              <!-- <a href="#">Searching algorithm 
+                  <div class="sub-dropdown-content">
+                    <a href="./Services/Searching algorithms/Shortest.html">shortest path first</a>
+                    <a href="#">Binary Search</a>
+                </div>
+                </a> -->
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/dist/contactform/contact.html"
+            id="Contact-us"
+            target="_blank"
+            >Contact us</a
+          >
+        </li>
+      </ul>
+
+      <a id="ham"
+        ><img
+          src="../images/hamburger-Menu.jpg"
+          height="64px"
+          width="64px"
+          alt=""
+        />
+      </a>
+    </nav>
+    <main>
+      <div>
+        <h2 id="title">bubble sort</h2>
+        <p id="def">
+          Bubble Sort is the simplest sorting algorithm that works by repeatedly
+          swapping the adjacent elements if they are in the wrong order. This
+          algorithm is not suitable for large data sets as its average and
+          worst-case time complexity is quite high.
+        </p>
+      </div>
+      <div class="algo-container">
+        <section class="data-container"></section>
+        <div class="container">
+          <button class="centered-button" onclick="generate()" id="Button1">
+            Generate new array
+          </button>
+          <button
+            id="start"
+            class="start"
+            onclick="BubbleSort();disable()"
+            id="Button2"
+            accesskey="s"
+          >
+            Start
+          </button>
+          <button id="resetArray">Reset Array</button>
+
+          <span>
+            <!-- Algorithm selection dropdown -->
+            <label for="algorithmSelect">Select Algorithm:</label>
+            <select
+              id="algorithmSelect"
+              class="ui dropdown"
+              onchange="changeAlgorithm()"
+            >
+             
+              <option value="bubble">Bubble Sort</option>
+              <option value="heap">HeapSort</option>
+              <option value="Quick">Quick Sort</option>
+              <option value="Insertion">Insertion Sort</option>
+              <option value="Selection">Selection Sort</option>
+              <option value="shell">Shell Sort</option>
+            </select>
+          </span>
+          <!-- <input type="text" placeholder="Only arrays!" style="margin-left: 25px" /> -->
+        </div>
+        <div id="totalTime"></div>
+
+        <input
+          type="text"
+          id="userInput"
+          placeholder="pattern:[6,4,23,64,2]"
+          style="padding: 6px"
+        />
+        <button id="btnUser" class="start">Generate</button>
+      </div>
+    </main>
+
+    <h4
+      style="
+        text-align: center;
+        font-weight: 450;
+        font-size: 26px;
+        padding: 12px;
+      "
+    >
+      more details about the algorithm in theory
+    </h4>
+    <div class="theoryDivContainer">
+      <!-- if we want to Change the width of the theory container in the future-->
+
+      <div class="theory">
+        <h2>In Bubble Sort algorithm</h2>
+        <ul>
+          <li>
+            traverse from left and compare adjacent elements and the higher one
+            is placed at right side.
+          </li>
+
+          <li>
+            In this way, the largest element is moved to the rightmost end at
+            first.
+          </li>
+          <li>
+            This process is then continued to find the second largest and place
+            it and so on until the data is sorted.
+          </li>
+          <li>
+            Time complexity of bubble sort :
+            <span style="color: #28a745">Best= O(n)</span> ,
+            <span style="color: #ffc107">average: O(n<sup>2</sup>)</span> ,
+            <span style="color: #dc3545">Worst: O(n<sup>2</sup>)</span>
+          </li>
+        </ul>
+        <p>
+          for more information about bubble sort Visit
+          <a href="https://www.geeksforgeeks.org/bubble-sort/"
+            >Bubble sort reference</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="../../index.js"></script>
+  </body>
+</html>

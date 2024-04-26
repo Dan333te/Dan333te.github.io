@@ -1,0 +1,615 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Inter+Tight:wght@600&family=Lumanosimo&family=Roboto+Mono:wght@600;700&family=Roboto:wght@700;900&family=Secular+One&family=Shadows+Into+Light&family=Ubuntu:ital,wght@1,500&display=swap');
+:root{
+    --main-font: 'Secular One', sans-serif;
+
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 16px;
+     background-color: aliceblue;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+     height: 70px;
+   }
+   #dropdown {
+    color:#494747;
+     position: relative;
+     display: inline-block;
+   }
+
+   /* Style for the main dropdown content */
+   #dropdown-content {
+     font-size: 16px;
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+   }
+   
+   /* Style for the main dropdown items */
+   #dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+   }
+   
+   /* Change color on hover */
+   #dropdown-content a:hover {
+     background-color: #f1f1f1;
+   }
+   
+   /* Show the main dropdown menu on hover */
+   #dropdown:hover #dropdown-content {
+     display: block;
+   }
+   
+   /* Additional styles for sub-dropdown */
+   .sub-dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+     z-index: 1;
+     top: 0;
+     left: 100%;
+   }
+   
+   .sub-dropdown-content a {
+     padding: 12px 16px;
+     display: block;
+   }
+   
+   .sub-dropdown-content a:hover {
+     background-color: #f1f1f1;
+   }
+   
+   #dropdown-content:hover .sub-dropdown-content {
+     display: block;
+   }
+   #ham{
+     display: none;
+    }
+    nav ul li{
+     cursor: pointer;
+    }
+   
+   #navMenu{
+     font-size: 22px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 100px;
+   }
+  
+   nav>a{
+     cursor: default;
+     font-weight: 800;
+     letter-spacing: 1.5px;
+   }
+   li a{
+     color:#494747;
+     transition: 0.3s color ease;
+   }
+   #navmenu>li{
+    color:#494747;
+   }
+    li a:hover{
+     color: rgb(217, 46, 86);
+    }  
+   
+   
+    
+   
+    @media (max-width:993px){
+    
+     #navMenu{
+       font-size: 22px;
+              position: fixed;
+              right: -100%;
+              top:60px;
+              gap: 0;
+              flex-direction: column;
+              background-color: #262626da ;
+              width: 100%;
+              text-align: center;
+              transition: 0.3s;
+              border-bottom-left-radius: 2px;
+              border-bottom-right-radius: 2px;
+   
+            }
+           
+            #navMenu li{
+             margin: 32px 0;
+             color: white;
+            }
+   
+            #navMenu li a{
+            color: white;
+            }
+            #navMenu.active{
+             right: 0;
+           
+            }
+            #ham{
+                display: block;
+                cursor: pointer;
+             
+            }
+            #navMenu li:hover{
+             border-bottom: 1px solid white;
+            }
+ 
+   #HomeSec{
+    flex-direction: column;
+    
+   }
+   #HomeSec {
+    text-align: center;
+   }
+    }
+   
+    #dropdown ul li {
+    
+     padding: 25px;
+     margin-bottom: 20px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.407);
+     height: 60px;
+     
+    }
+    #dropdown-ul {
+    
+     width: 100%;
+     position: absolute;
+     right: 0;
+     top: 100%;
+     background-color: black;
+     color: white;
+     z-index: 99;
+     padding: 10px;
+     text-align: center;
+     overflow: hidden;
+    transition: 0.3s;
+   }
+
+  
+   #dropdown-ul.active{
+     left:0;
+   }
+   #Home-img {
+     animation: moveLeftRight 5s ease infinite; /* Apply the animation to your image for 5 seconds */
+   }
+   @keyframes moveLeftRight {
+     0% {
+         transform: translateX(0);
+     }
+     50% {
+         transform: translateX(10px);
+     }
+     100% {
+         transform: translateX(0);
+     }
+     
+   }
+   div.home-left{
+    width: 50%;
+display: flex;
+flex-direction: column;
+    font-size: 4.5rem/* 72px */;
+    line-height: 1;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    transform: translatex(-100%);
+  transition: all 600ms ease-in-out; 
+  }
+  div.home-left.show{
+    transform: translateX(0px);
+  }
+
+   div.home-left a{
+    text-align: center;
+    width: 150px;
+   }
+  /* .right{
+    
+    opacity: 0;
+  }
+  .right.show{
+   
+    opacity: 1;
+  } */
+   .ServicesHeader{
+    font-family: Secular One;
+font-size: 128px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 16px;
+background: linear-gradient(180deg, rgba(12, 7, 255, 0.57) 6.77%, rgba(12, 7, 255, 0.45) 62.5%, rgba(12, 7, 255, 0.00) 88.02%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    
+}
+#services{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+#card{
+  position: relative;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 600px;
+  border-radius: 45px;
+  border: 3px solid #FFF;
+  background: #FDF8F8;
+  box-shadow: 5px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+   #card h2{
+    color: #2621FF;
+text-align: center;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+margin-top: 25px;
+color: #2621FF;
+text-align: center;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 3.75px;
+   }
+ 
+#card p{
+    max-height: 256px;
+    padding: 0 8px;
+    margin-top: 25px;
+    color: #1d1d1d;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 3px;
+}
+a.learn{
+  padding: 12px;
+  cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    margin-top: 15px;
+    color: #FFF;
+padding: 8px 8px;
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 5px;
+border-radius: 6px;
+background: #DF3B5C;
+border: 1px solid #9d4254 ;
+
+}
+
+@media (max-width:993px){
+
+  #dropdown-content {
+    font-size: 16px;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Style for the main dropdown items */
+  #dropdown-content a {
+    background-color: #333;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color on hover */
+  #dropdown-content a:hover {
+    background-color: #333;
+  }
+  
+  /* Show the main dropdown menu on hover */
+  #dropdown:hover #dropdown-content {
+    display: block;
+  }
+  
+  /* Additional styles for sub-dropdown */
+  .sub-dropdown-content {
+   
+    background-color: #333;
+  
+    z-index: 1;
+    top: 0;
+    left: 100%;
+  }
+  
+  .sub-dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    border-bottom: 1px solid white;
+  }
+  
+  .sub-dropdown-content a:hover {
+    background-color: #333;
+  }
+  .home-left.show{
+    width: 100%;
+  }
+  .home-left.show p{
+    text-align: center;
+  }
+
+  #services{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  #card{
+    width: 70%;
+  }
+.ServicesHeader{
+    text-align: center;
+    font-size: 60px;
+}
+#services p{
+    font-size: 16px;
+}
+#services a{
+    font-size: 20px;
+    padding: 8px 8px;
+}
+}
+footer{
+    margin-top: 30px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #333;
+    gap: 20px;
+   
+}
+footer a{
+    transition: 0.3s all ease;
+}
+footer a:hover{
+    transform: scale(1.2);
+    transform: translatey(-5px);
+}
+@media (max-width:500px){
+#card{
+  width: 90%;
+}
+
+}
+@media only screen and (max-width: 1232px) {
+  .container {
+    /* Adjust container styles for smaller screens */
+    padding: 0.5em; /* For example, reduce padding on smaller screens */
+  }
+
+  .container .contactCard {
+    /* Adjust individual card styles for smaller screens */
+    width: 100%; /* Make the cards take full width on smaller screens */
+  }
+
+  /* Add more styles as needed for smaller screens */
+}
+.mainContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display:flex;
+justify-content: center;
+align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1em;
+  overflow: hidden;
+  transition: all 0.8s ease-in-out;
+}
+@media (max-width: 1232px) {
+  .container .contactCard {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 1em;
+    background: #DF3B5C;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* backdrop-filter: blur(40px); */
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 0px 10px 10px rgba(46, 54, 68, 0.03);
+    transition: all 0.8s ease-in-out;
+    opacity: 0;
+  }
+
+  .container .contactCard:nth-child(1) {
+    transform: translateX(-100%);
+  }
+
+  .container .contactCard:nth-child(2) {
+    transform: translateX(100%);
+  }
+
+  .container .contactCard.visible {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+ .container .contactCard {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 1em;
+  background: #DF3B5C;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* backdrop-filter: blur(40px); */
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  box-shadow: 0px 10px 10px rgba(46, 54, 68, 0.03);
+  transition:all 0.8s ease-in-out;
+  opacity: 0;
+ 
+}
+.container .contactCard:nth-child(1) {
+  transform: translateX(-200%);
+ 
+}
+
+.container .contactCard:nth-child(2) {
+  transform: translateX(200%);
+}
+
+.container .contactCard.visible{
+  transform: translateX(0);
+  opacity: 1;
+
+}
+body .container .contactCard .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+body .container .contactCard .content .img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.25);
+}
+body .container .contactCard .content .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .container .contactCard .content .cardContent h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+body .container .contactCard .content .cardContent h3 span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+body .container .contactCard .sci {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body .container .contactCard .sci li {
+  margin: 0 10px;
+  transform: translateY(40px);
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: calc(0.1s * var(--i));
+}
+body .container .contactCard .sci li a {
+  font-size: 24px;
+}
+body .container .contactCard:hover .content {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+body .container .contactCard:hover .sci li {
+  transform: translateY(0px);
+  opacity: 1;
+}
+li a i{
+  transition: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+   
+   
+   
+   

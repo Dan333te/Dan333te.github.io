@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&family=Inter:wght@500&family=League+Spartan:wght@600&family=Lumanosimo&family=Roboto+Mono:wght@600;700&family=Roboto:wght@700;900&family=Secular+One&family=Shadows+Into+Light&family=Ubuntu:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithms!</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <!-- <a  class="uppercase text-blue-600  text-2xl">Algorthims</a> -->
+      <div>
+        <img
+          src="./images/machine-learning (1).png"
+          height="64px"
+          width="64px"
+          alt=""
+        />
+      </div>
+      <ul id="navMenu">
+        <li><a id="Home" href="#">Home</a></li>
+        <li id="dropdown">
+          Services
+          <div id="dropdown-content">
+            <a href="./Services2/Bubble sort/index.html#bubble" id="sorting"
+              >Sorting Algorithm
+            </a>
+            
+          </div>
+        </li>
+        <li>
+          <a href="./contactform/contact.html" id="Contact-us" target="_blank"
+            >Contact us</a
+          >
+        </li>
+      </ul>
+
+      <a id="ham"
+        ><img
+          src="./images/hamburger-Menu.jpg"
+          height="64px"
+          width="64px"
+          alt=""
+        />
+      </a>
+    </nav>
+
+    <section id="HomeSec" class="flex justify-between items-center px-10">
+      <!-- <div id="Home-left" class="w-1/2 flex-col my-48"> -->
+      <div class="home-left">
+        <h1 class="text-7xl font-bold" style="color: #0c07ff">Who we are?</h1>
+
+        <p class="max-w-xl my-6 text-xl text-gray-500">
+          We are a dynamic duo passionate about Algorithms and excited to share
+          our knowledge with you. Our journey began as a college project where
+          we realized the power of Algorithms in solving complex problems and
+          optimizing processes. Now, we're on a mission to make Algorithms more
+          accessible to everyone. Whether you're a student looking for resources
+          to ace your computer science courses or a professional seeking to
+          sharpen your algorithmic skills, you've come to the right place.
+        </p>
+      </div>
+
+      <div class="right">
+        <img
+          src="./images/computer-algorithm-illustration-concept-modern-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration-removebg.png"
+          alt=""
+          height="800px"
+          width="900px"
+          id="Home-img"
+        />
+      </div>
+    </section>
+
+    <h1 class="ServicesHeader" style="padding-bottom: 10px; text-align: center">
+      Services
+    </h1>
+    <section id="services">
+      <div id="card">
+        <img src="images/modeling.png" height="120px" width="120px" alt="" />
+        <h2>Heap sort</h2>
+        <p>
+          Heap sort is a comparison-based sorting technique based on Binary Heap
+          data structure. It is similar to the selection sort where we first
+          find the minimum element and place the minimum element at the
+          beginning. Repeat the same process for the remaining elements.
+        </p>
+        <a class="learn" href="./Services2/bubble sort/index.html#heap"
+          >See algorithm</a
+        >
+      </div>
+      <div id="card">
+        <img width="" src="https://miro.medium.com/max/3840/1*p_wD00rbc6RkA8w6lqqCkg.gif" height="120px" width="120px" alt="" />
+        <h2>Bubble sort</h2>
+        <p>
+          Bubble Sort is the simplest sorting algorthim that works by repeatedly
+          swapping the adjacent elements if they are in the wrong order. This
+          algorithm is not suitable for large data sets as its average and
+          worst-case time complexity is quite high.
+        </p>
+        <a class="learn" href="./Services2/Bubble sort/index.html#bubble"
+          >See algorithm</a
+        >
+      </div>
+      <div id="card">
+        <img src="images/sort (1).png" height="120px" width="120px" alt="" />
+        <h2>Insertion sort</h2>
+        <p>
+          Insertion sort is a simple sorting algorithm that works similar to the
+          way you sort playing cards in your hands. The array is virtually split
+          into a sorted and an unsorted part. Values from the unsorted part are
+          picked and placed at the correct position in the sorted part.
+        </p>
+        <a class="learn" href="./Services2/Bubble sort/index.html#Insertion"
+          >See algorithm</a
+        >
+      </div>
+    </section>
+    <section id="services">
+      <div id="card">
+        <img src="images/modeling.png" height="120px" width="120px" alt="" />
+        <h2>Quick Sort</h2>
+        <p>
+          The key process in quickSort is a partition(). The target of
+          partitions is to place the pivot (any element can be chosen to be a
+          pivot) at its correct position in the sorted array and put all smaller
+          elements to the left of the pivot, and all greater elements to the
+          right of the pivot. Partition is done recursively on each side of the
+          pivot after the pivot is placed in its correct position and this
+          finally sorts the array
+        </p>
+        <a href="./Services2/Bubble sort/index.html#Quick" class="learn"
+          >See algorithm</a
+        >
+      </div>
+      <div id="card">
+        <img width="100%" height="500px" src="images/selection.gif" height="120px" width="120px" alt="" />
+        <h2>Selection sort</h2>
+        <p>
+          Selection sort is a simple and efficient sorting algorithm that works
+          by repeatedly selecting the smallest (or largest) element from the
+          unsorted portion of the list and moving it to the sorted portion of
+          the list.
+        </p>
+        <a href="./Services2/Bubble sort/index.html#Selection" class="learn"
+          >See algorithm</a
+        >
+      </div>
+      <div id="card">
+        <img src="images/modeling.png" height="120px" width="120px" alt="" />
+        <h2>Shell sort</h2>
+        <p>
+          Shell sort is mainly a variation of Insertion Sort. In insertion sort,
+          we move elements only one position ahead. When an element has to be
+          moved far ahead, many movements are involved. The idea of ShellSort is
+          to allow the exchange of far items. In Shell sort, we make the array
+          h-sorted for a large value of h. We keep reducing the value of h until
+          it becomes 1. An array is said to be h-sorted if all sublists of every
+          h’th element are sorted.
+        </p>
+        <a href="./Services2/Bubble sort/index.html#shell" class="learn"
+          >See algorithm</a
+        >
+      </div>
+    </section>
+
+    <h1
+      class="ServicesHeader"
+      style="padding-bottom: 10px; text-align: center; margin-top: 15px"
+    >
+      Contact us
+    </h1>
+
+    <div class="mainContainer">
+      <div class="container">
+        <div class="contactCard">
+          <div class="content">
+            <div class="img">
+              <img src="./images/Abood.jpg" alt="abdullahcontact" />
+            </div>
+            <div class="cardContent">
+              <h3>Abdullah Omar<br /><span>Web Developer</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i: 1">
+              <a
+                rel="noopener"
+                href="https://www.facebook.com/profile.php?id=100004123744954"
+                target="_blank"
+                ><i
+                  class="fa fa-facebook"
+                  style="color: white"
+                  aria-hidden="true"
+                ></i
+              ></a>
+            </li>
+            <li style="--i: 2">
+              <a
+                rel="noopener"
+                href="https://www.instagram.com/vergil_iq/"
+                target="_blank"
+                ><i
+                  class="fa fa-instagram"
+                  aria-hidden="true"
+                  style="color: white"
+                ></i
+              ></a>
+            </li>
+            <li style="--i: 3">
+              <a href="https://github.com/Dan333te" target="_blank"
+                ><i
+                  class="fa fa-github"
+                  aria-hidden="true"
+                  style="color: white"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="contactCard">
+          <div class="content">
+            <div class="img">
+              <img src="./images/anwar.jpg" alt="anwarContact" />
+            </div>
+            <div class="cardContent">
+              <h3>Anwar Akram<br /><span>Data analyst</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+         
+            <li style="--i: 2">
+              <a href="https://www.instagram.com/vibedeez/" target="_blank"
+                ><i
+                  class="fa fa-instagram"
+                  aria-hidden="true"
+                  style="color: white"
+                ></i
+              ></a>
+            </li>
+            <li style="--i: 3">
+              <a href="https://github.com/anwarakram" target="_blank"
+                ><i
+                  class="fa fa-github"
+                  aria-hidden="true"
+                  style="color: white"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+    <script type="module" src="./react/main.jsx"></script>
+  </body>
+</html>
