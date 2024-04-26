@@ -1,0 +1,73 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+body{
+    font-family: inter,'San serif';
+    color: black;
+}
+  .sentContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+  .popup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    height: 50%;
+    
+    border-radius: 6px;
+  }
+  .popup svg {
+    padding-top: 15px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .popup  h1 {
+    padding-top: 12px;
+    font-weight: 600;
+    font-size: 40px;
+  }
+  
+  .popup  p {
+    /* padding-top: 6px; */
+    font-size: 32px;
+  }
+
+  a {
+    font-family: system-ui, sans-serif;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: .1em .6em;
+    font-weight: bold;  
+    border: none;
+    border-radius: 6px;
+    color: black;
+    text-decoration: none;
+  }
+  a {
+    --c:  #229091; /* the color*/
+    
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  a:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+  }
+  a:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+  }
