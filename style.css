@@ -232,14 +232,7 @@ flex-direction: column;
     text-align: center;
     width: 150px;
    }
-  /* .right{
-    
-    opacity: 0;
-  }
-  .right.show{
-   
-    opacity: 1;
-  } */
+
    .ServicesHeader{
     font-family: Secular One;
 font-size: 128px;
@@ -252,6 +245,10 @@ background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
     
+}
+.divimg{
+margin:20px auto;
+
 }
 #services{
   margin-top: 10px;
@@ -269,17 +266,17 @@ background-clip: text;
   height: 600px;
   border-radius: 45px;
   border: 3px solid #FFF;
-  background: #FDF8F8;
+  background: #FAFAFF;
   box-shadow: 5px 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
    #card h2{
-    color: #2621FF;
+    color: #30343F;
 text-align: center;
 font-family: Inter;
 font-size: 30px;
 font-style: normal;
 margin-top: 25px;
-color: #2621FF;
+
 text-align: center;
 font-weight: 600;
 line-height: normal;
@@ -314,7 +311,7 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 5px;
 border-radius: 6px;
-background: #DF3B5C;
+background: #30343F;
 border: 1px solid #9d4254 ;
 
 }
@@ -431,6 +428,7 @@ footer a:hover{
   .container .contactCard {
     /* Adjust individual card styles for smaller screens */
     width: 100%; /* Make the cards take full width on smaller screens */
+    background: #30343F;
   }
 
   /* Add more styles as needed for smaller screens */
@@ -459,7 +457,7 @@ align-items: center;
     width: 300px;
     height: 400px;
     margin: 1em;
-    background: #DF3B5C;
+    background: #30343F;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     display: flex;
@@ -492,7 +490,7 @@ align-items: center;
   width: 300px;
   height: 400px;
   margin: 1em;
-  background: #DF3B5C;
+  background: #30343F;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
   display: flex;
