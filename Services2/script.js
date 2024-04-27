@@ -275,7 +275,7 @@ function swap(el1, el2) {
   });
 }
 
-async function BubbleSort(delay = 300) {
+async function BubbleSort(delay = 200) {
   let bars = document.querySelectorAll(".bar");
   // bars[0].style.backgroundColor = primaryColor;
   let comparisons = 0;
@@ -547,18 +547,20 @@ function changeAlgorithm() {
 
       break;
   }
+  // generate()
   document.querySelector("#def").textContent = algorithmDefintion;
   document.querySelector(".theoryDivContainer").innerHTML = theory;
+  
 }
 
-document.querySelector("#resetArray").addEventListener("click", () => {
-  let userInput = localStorage.getItem("userArray");
-  if (userInput) {
-    generateBarsFromInput(userInput);
-  } else {
-    return;
-  }
-});
+// document.querySelector("#resetArray").addEventListener("click", () => {
+//   let userInput = localStorage.getItem("userArray");
+//   if (userInput) {
+//     generateBarsFromInput(userInput);
+//   } else {
+//     return;
+//   }
+// });
 document.querySelector("select").addEventListener("change", () => {
   location.hash = "#" + document.querySelector("select").value;
 });
